@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="hdiv">
+            <h2>
+                <%=date%>
+            </h2>
+        </div>
+        <div class="container hdiv">
+                <% wdones.forEach(function(wdone){ %>
+                        <form action="/delete" method="post">
+                            <div class="items">
+                            <input type="checkbox" onchange="this.form.submit()" name="checkbox" value="<%=wdone._id%>" >
+                            <p><%=wdone.name%></p>
+                        </div>
+                        <input type="hidden" name="listname" value="<%= date %>">
+                        </form>
+                    <% }) %>
+            <div class="btndiv">
+                <div>
+                    <form action="/insert" method="post">
+                        <input class="nitem" type="text" name="iname" placeholder="New item" autofocus>
+                        <button class="btn" type="submit" name="list" value="<%= date %>">+</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

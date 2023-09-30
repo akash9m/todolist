@@ -1,0 +1,70 @@
+body{
+    background-color: aqua;
+    
+}
+main{
+    margin : 4%;
+   display :flex;
+   flex-direction: column;
+   align-items: center;
+}
+.container{
+    background-color: white;
+    border-radius: 0.2rem;
+}
+.items{
+display: flex;
+gap: 1rem;
+padding-left: 0.7rem;
+border-bottom:solid 0.09rem gray;
+}
+.hdiv{
+    width: 310px;
+    text-align: center;
+}
+h2{
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    border: none;
+    border-radius: 0.2rem;
+}
+.btndiv{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 4% 4% 4%;
+}
+.nitem{
+    border: none;
+    border-bottom:solid 0.05rem #666666;
+    text-align: center;
+    margin-right: 2.7rem;
+}
+.nitem:focus{
+    outline: none;
+}
+.btn {
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 17px;
+    background: #3498db;
+    padding: 6px 11px 7px 11px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
